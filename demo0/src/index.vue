@@ -2,7 +2,7 @@
   <div class="wrapper">
     <image :src="logo" class="logo" />
     <text class="greeting">The environment is ready!
-      <text>zz</text>
+      <text>author: zz</text>
     </text>
     <router-view/>
   </div>
