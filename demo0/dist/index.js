@@ -2961,7 +2961,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('text', {
     staticClass: ["greeting"]
-  }, [_vm._v("The environment is ready!\n    "), _c('text', [_vm._v("zz")])])
+  }, [_vm._v("The environment is ready!\n    "), _c('text', [_vm._v("author:zz")])])
 }]}
 module.exports.render._withStripped = true
 
