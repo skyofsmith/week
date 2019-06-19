@@ -78,7 +78,7 @@
 var _require = __webpack_require__(1),
     router = _require.router;
 
-var App = __webpack_require__(6);
+var App = __webpack_require__(10);
 /* eslint-disable no-new */
 new Vue(Vue.util.extend({ el: '#root', router: router }, App));
 router.push('/');
@@ -2802,12 +2802,11 @@ if (inBrowser && window.Vue) {
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
-/* styles */
-__vue_styles__.push(__webpack_require__(4)
-)
+/* script */
+__vue_exports__ = __webpack_require__(4)
 
 /* template */
-var __vue_template__ = __webpack_require__(5)
+var __vue_template__ = __webpack_require__(9)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2822,7 +2821,6 @@ if (typeof __vue_options__ === "function") {
 __vue_options__.__file = "G:\\GIT\\mobile\\weex\\demo0\\src\\views\\Home.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-5e265133"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2838,60 +2836,46 @@ module.exports = __vue_exports__
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = {
-  "home": {
-    "width": 100,
-    "height": 100,
-    "backgroundColor": "#ff99ee"
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _HelloWorld = __webpack_require__(5);
+
+var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  components: {
+    HelloWorld: _HelloWorld2.default
   }
-}
+}; //
+//
+//
+//
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["home"]
-  }, [_c('div', [_c('text', [_vm._v("username")]), _c('input', {
-    attrs: {
-      "type": "text",
-      "placeholder": "username"
-    }
-  })]), _c('div', [_c('text', [_vm._v("password")]), _c('input', {
-    attrs: {
-      "type": "password",
-      "placeholder": "password"
-    }
-  })]), _c('input', {
-    attrs: {
-      "type": "submit",
-      "value": "submit"
-    }
-  })])
-}]}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(7)
+__vue_styles__.push(__webpack_require__(6)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(8)
+__vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(9)
+var __vue_template__ = __webpack_require__(8)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2903,10 +2887,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "G:\\GIT\\mobile\\weex\\demo0\\src\\index.vue"
+__vue_options__.__file = "G:\\GIT\\mobile\\weex\\demo0\\src\\components\\HelloWorld.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-1a4d8e3c"
+__vue_options__._scopeId = "data-v-656039f0"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -2921,18 +2905,13 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
-module.exports = {
-  "wrapper": {
-    "height": 100,
-    "width": 100
-  }
-}
+module.exports = {}
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2954,24 +2933,244 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-  name: 'App',
   data: function data() {
     return {
-      logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
+      ecosystem: [{
+        text: 'vuetify-loader',
+        href: 'https://github.com/vuetifyjs/vuetify-loader'
+      }, {
+        text: 'github',
+        href: 'https://github.com/vuetifyjs/vuetify'
+      }, {
+        text: 'awesome-vuetify',
+        href: 'https://github.com/vuetifyjs/awesome-vuetify'
+      }],
+      importantLinks: [{
+        text: 'Documentation',
+        href: 'https://vuetifyjs.com'
+      }, {
+        text: 'Chat',
+        href: 'https://community.vuetifyjs.com'
+      }, {
+        text: 'Made with Vuetify',
+        href: 'https://madewithvuetifyjs.com'
+      }, {
+        text: 'Twitter',
+        href: 'https://twitter.com/vuetifyjs'
+      }, {
+        text: 'Articles',
+        href: 'https://medium.com/vuetify'
+      }],
+      whatsNext: [{
+        text: 'Explore components',
+        href: 'https://vuetifyjs.com/components/api-explorer'
+      }, {
+        text: 'Select a layout',
+        href: 'https://vuetifyjs.com/layout/pre-defined'
+      }, {
+        text: 'Frequently Asked Questions',
+        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
+      }]
     };
   }
 };
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports={render:function(){},staticRenderFns:[]}
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["wrapper"]
-  }, [_c('router-view')], 1)
+  return _c('HelloWorld')
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* script */
+__vue_exports__ = __webpack_require__(11)
+
+/* template */
+var __vue_template__ = __webpack_require__(12)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "G:\\GIT\\mobile\\weex\\demo0\\src\\index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+  name: 'App',
+  data: function data() {
+    return {
+      //
+    };
+  }
+};
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('v-app', [_c('v-toolbar', {
+    attrs: {
+      "app": ""
+    }
+  }, [_c('v-toolbar-title', {
+    staticClass: ["headline", "text-uppercase"]
+  }, [_c('span', [_vm._v("Vuetify")]), _c('span', {
+    staticClass: ["font-weight-light"]
+  }, [_vm._v("MATERIAL DESIGN")])]), _c('v-spacer'), _c('v-btn', {
+    attrs: {
+      "flat": "",
+      "href": "https://github.com/vuetifyjs/vuetify/releases/latest",
+      "target": "_blank"
+    }
+  }, [_c('span', {
+    staticClass: ["mr-2"]
+  }, [_vm._v("Latest Release")]), _c('v-icon', [_vm._v("open_in_new")])], 1)], 1), _c('v-content', [_c('router-view')], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

@@ -1,36 +1,36 @@
 {
   "name": "demo0",
   "version": "1.0.0",
+  "private": true,
   "description": "A weex project",
   "author": "",
-  "private": true,
   "scripts": {
-    "start": "npm run serve",
+    "serve": "webpack-dev-server --env.NODE_ENV=development --progress",
     "build": "webpack --env.NODE_ENV=common",
+    "lint": "eslint --ext .js,.vue src  --fix",
+    "android": "weex run android",
+    "build:plugin": "webpack --env.NODE_ENV=plugin",
     "build:prod": "webpack --env.NODE_ENV=production",
     "build:prod:web": "webpack --env.NODE_ENV=release",
-    "build:plugin": "webpack --env.NODE_ENV=plugin",
-    "clean:web": "rimraf ./release/web",
-    "clean:ios": "rimraf ./release/ios",
     "clean:android": "rimraf ./release/android",
+    "clean:ios": "rimraf ./release/ios",
+    "clean:web": "rimraf ./release/web",
     "dev": "webpack --env.NODE_ENV=common --progress --watch",
-    "lint": "eslint --ext .js,.vue src  --fix",
-    "serve": "webpack-dev-server --env.NODE_ENV=development --progress",
     "ios": "weex run ios",
-    "web": "npm run serve",
-    "android": "weex run android",
-    "pack:ios": "npm run clean:ios && weex build ios",
     "pack:android": "npm run clean:android && weex build android",
-    "pack:web": "npm run clean:web && npm run build:prod:web"
+    "pack:ios": "npm run clean:ios && weex build ios",
+    "pack:web": "npm run clean:web && npm run build:prod:web",
+    "start": "npm run serve",
+    "web": "npm run serve"
   },
-  "keywords": [
-    "weex"
-  ],
-  "license": "MIT",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "material-design-icons-iconfont": "^3.0.3",
     "phantom-limb": "0.0.1",
+    "roboto-fontface": "*",
     "vue": "^2.5.11",
     "vue-router": "^3.0.1",
+    "vuetify": "^1.5.5",
     "weex-vue-render": "^0.12.26"
   },
   "devDependencies": {
@@ -63,6 +63,9 @@
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.2",
     "script-ext-html-webpack-plugin": "^1.8.5",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-loader": "^12.2.0",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.11",
@@ -72,5 +75,9 @@
     "webpack-uglify-parallel": "^0.1.4",
     "weex-loader": "^0.7.2",
     "ws": "^1.1.0"
-  }
+  },
+  "keywords": [
+    "weex"
+  ],
+  "license": "MIT"
 }
